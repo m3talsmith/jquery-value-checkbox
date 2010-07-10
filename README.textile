@@ -28,13 +28,11 @@ h2. Syntax and arguments
 
 There are three arguments provided in hash form:
 
-<pre><code>
-$("input[type='checkbox']").valueCheckbox({
+<pre><code>$("input[type='checkbox']").valueCheckbox({
   strict: true,
   checked_value: "yea",
   unchecked_value: "nay"
-});
-</pre></code>
+});</pre></code>
 
 And here's what all of that means ...
 
