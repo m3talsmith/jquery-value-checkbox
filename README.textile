@@ -20,13 +20,27 @@ So, If you have a check box (named ".checked" for the sake of this demo) that is
 
 The checked value will be whatever value the initial checked. Vice versa if the check box was unchecked, and so on.
 
-h2. Arguments
+h2. A note on queries
 
-There are three arguments:
+The plugin uses $.each() internally so it can handle an array of elements (like the first example) or a single element (like the second example). There is no need to do your own $.each() on the query results.
 
-* strict: true or false
-* checked_value: defaults to true but can be whatever you choose
-* unchecked_value: defaults to false but can be whatever you choose
+h2. Syntax and arguments
+
+There are three arguments provided in hash form:
+
+<pre><code>
+$("input[type='checkbox']").valueCheckbox({
+  strict: true,
+  checked_value: "yea",
+  unchecked_value: "nay"
+});
+</pre></code>
+
+And here's what all of that means ...
+
+* *strict*: true or false
+* *checked_value*: defaults to true but can be whatever you choose
+* *unchecked_value*: defaults to false but can be whatever you choose
 
 Strict mode will always be set the checked and unchecked values to true and false unless you provide it with other values. Strict mode is the default mode and must be manually turned off if you want it to automatically grab the checked or unchecked value.
 
