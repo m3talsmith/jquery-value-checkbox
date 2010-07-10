@@ -6,7 +6,7 @@ I wrote this when I needed the value to change for a specific project, but first
 
 h2. Usage
 
-The only requirement is jQuery.
+The only requirement is "jQuery":http://jquery.com/ .
 
 The simplest way to use this is to just search for check boxes and attach valueCheckbox to it:
 
@@ -24,7 +24,7 @@ h2. Arguments
 
 There are three arguments:
 
-* strict:(true|false)
+* strict: true or false
 * checked_value: defaults to true but can be whatever you choose
 * unchecked_value: defaults to false but can be whatever you choose
 
